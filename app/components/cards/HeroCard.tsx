@@ -9,8 +9,17 @@ interface HeroCardProps {
   delay?: number;
 }
 
+function getGreeting(): string {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 12) return "Good morning";
+  if (hour >= 12 && hour < 18) return "Good afternoon";
+  if (hour >= 18 && hour < 22) return "Good evening";
+  return "Hey there, night owl";
+}
+
 export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
   const firstName = name.split(" ")[0];
+  const greeting = getGreeting();
 
   const handleGetInTouch = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -31,7 +40,7 @@ export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
         </span>
         <div>
           <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-            Hi, I&apos;m {firstName}
+            {greeting}, I&apos;m {firstName}
             <br />
             <span className="text-text-muted">I build products from</span>
             <br />
