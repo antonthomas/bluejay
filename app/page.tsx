@@ -14,7 +14,19 @@ import profileData from "./data/profile.json";
 
 const profile = profileData satisfies Profile;
 
+function getYearsOfExperience(): number {
+  const [year, month] = profile.careerStart.split("-").map(Number);
+  const now = new Date();
+  const diff = now.getFullYear() - year + (now.getMonth() + 1 - month) / 12;
+  return Math.floor(diff);
+}
+
 export default function Home() {
+  const years = getYearsOfExperience();
+  const stats = profile.stats.map((stat) =>
+    stat.label === "Years Experience" ? { ...stat, value: `${years}+` } : stat,
+  );
+
   return (
     <div className="min-h-screen bg-black py-8 md:py-16">
       <BentoGrid>
@@ -33,7 +45,7 @@ export default function Home() {
           delay={0.1}
         />
 
-        {profile.stats.map((stat, i) => (
+        {stats.map((stat, i) => (
           <StatCard key={stat.label} stat={stat} delay={0.2 + i * 0.1} />
         ))}
 

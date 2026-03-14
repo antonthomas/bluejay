@@ -34,6 +34,7 @@ export interface Profile {
   summary: string;
   currentStatus: string;
   availableForWork: boolean;
+  careerStart: string;
   stats: Stat[];
   techStack: TechItem[];
   experience: Experience[];
