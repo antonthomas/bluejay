@@ -12,7 +12,7 @@
   "stats": [
     { "value": "5+", "label": "Years Experience" },
     { "value": "7", "label": "Industries Covered" },
-    { "value": "24/7", "label": "Looking To Improve" }
+    { "value": "100%", "label": "Curiosity-Driven" }
   ],
   "techStack": [
     { "name": "NestJS", "color": "#E0234E" },
