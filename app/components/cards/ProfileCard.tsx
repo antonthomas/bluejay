@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { BentoCard } from "../BentoCard";
 
 interface ProfileCardProps {
@@ -46,13 +49,13 @@ export function ProfileCard({
           rel="noopener noreferrer"
           className="flex h-9 w-9 items-center justify-center rounded-full border border-card-border text-xs text-text-muted transition-colors hover:border-text-dim hover:text-white"
         >
-          Li
+          <FaLinkedinIn size={14} />
         </a>
         <a
           href={`mailto:${email}`}
           className="flex h-9 w-9 items-center justify-center rounded-full border border-card-border text-xs text-text-muted transition-colors hover:border-text-dim hover:text-white"
         >
-          @
+          <FaEnvelope size={14} />
         </a>
       </div>
     </BentoCard>

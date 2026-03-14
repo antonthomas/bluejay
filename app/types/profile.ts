@@ -38,6 +38,5 @@ export interface Profile {
   experience: Experience[];
   services: string[];
   education: Education[];
-  clients: string[];
   certifications: string[];
 }

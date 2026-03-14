@@ -14,7 +14,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
     >
       <div>
         <div className="mb-2 flex items-center justify-between">
-          <span className="rounded-full border border-card-border px-2.5 py-1 text-xs text-text-muted">
+          <span className="text-xs text-text-muted">
             {experience.period}
           </span>
         </div>

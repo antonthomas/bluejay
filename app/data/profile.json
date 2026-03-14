@@ -5,13 +5,13 @@
   "email": "anton@bluejay.be",
   "linkedin": "https://www.linkedin.com/in/anton-thomas/",
   "languages": ["Dutch", "English", "French"],
-  "summary": "Specializing in robust, maintainable applications rooted in Domain-Driven Design. From MVP to production — I own the full lifecycle.",
+  "summary": "Versatile engineer who moves seamlessly between frontend, backend, and infrastructure. From first commit to production, I take full ownership.",
   "currentStatus": "Building full-stack products at Studaro & freelancing via Bluejay",
   "availableForWork": false,
   "stats": [
     { "value": "5+", "label": "Years Experience" },
-    { "value": "MSc", "label": "Applied CS — KU Leuven" },
-    { "value": "3", "label": "Languages Spoken" }
+    { "value": "7", "label": "Industries Covered" },
+    { "value": "∞", "label": "Opportunities" }
   ],
   "techStack": [
     { "name": "NestJS", "color": "#E0234E" },
@@ -28,17 +28,9 @@
       "company": "Studaro",
       "role": "Full Stack Developer",
       "period": "Jan 2026 - Present",
-      "description": "Building high-performance applications with NestJS and Vue.js in a fast-paced environment.",
+      "description": "Building the future of hiring with NestJS and Vue.js in a fast-paced environment.",
       "gradientFrom": "#2563eb33",
       "gradientTo": "#0891b233"
-    },
-    {
-      "company": "Bluejay",
-      "role": "Freelance IT Consultant",
-      "period": "May 2025 - Present",
-      "description": "Helping businesses translate requirements into scalable architectures and cloud-deployed products.",
-      "gradientFrom": "#4f46e533",
-      "gradientTo": "#9333ea33"
     },
     {
       "company": "Attentia",
@@ -92,17 +84,10 @@
       "period": "2017 - 2020"
     }
   ],
-  "clients": [
-    "Dimitri Vegas & Like Mike",
-    "Lost Frequencies",
-    "Anouk Matton Cosmetics",
-    "Ter Eiken Squash & Padel"
-  ],
   "certifications": [
     "Intro to Deep Learning",
     "React Native: The beginner guide (2024 edition)",
     "The Complete Guide to Becoming a Software Architect",
-    "Presentation Skills: Master Confident Presentations",
-    "Intermediate Active Investor"
+    "Presentation Skills: Master Confident Presentations"
   ]
 }

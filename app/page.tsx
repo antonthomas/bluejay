@@ -8,7 +8,7 @@ import { StatusCard } from "./components/cards/StatusCard";
 import { ExperienceCard } from "./components/cards/ExperienceCard";
 import { ServicesCard } from "./components/cards/ServicesCard";
 import { EducationCard } from "./components/cards/EducationCard";
-import { ClientsCard } from "./components/cards/ClientsCard";
+import { CertificationsCard } from "./components/cards/CertificationsCard";
 import { FooterCard } from "./components/cards/FooterCard";
 import profileData from "./data/profile.json";
 
@@ -37,18 +37,18 @@ export default function Home() {
           <StatCard key={stat.label} stat={stat} delay={0.2 + i * 0.1} />
         ))}
 
-        <TechStackCard techStack={profile.techStack} delay={0.5} />
         <StatusCard
           currentStatus={profile.currentStatus}
           availableForWork={profile.availableForWork}
           delay={0.6}
         />
+        <TechStackCard techStack={profile.techStack} delay={0.5} />
 
         <ExperienceCard experience={profile.experience} delay={0.7} />
 
         <ServicesCard services={profile.services} delay={0.8} />
         <EducationCard education={profile.education} delay={0.9} />
-        <ClientsCard clients={profile.clients} delay={1.0} />
+        <CertificationsCard certifications={profile.certifications} delay={1.0} />
 
         <FooterCard
           name={profile.name}
