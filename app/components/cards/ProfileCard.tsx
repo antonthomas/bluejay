@@ -38,11 +38,11 @@ export function ProfileCard({
   const buttonIdle =
     "border-card-border text-text-muted hover:border-text-dim hover:text-white";
   const buttonGlow =
-    "border-accent text-white shadow-[0_0_12px_rgba(99,102,241,0.5)]";
+    "border-accent text-white shadow-[0_0_12px_rgba(0,153,255,0.5)]";
 
   const cardHighlight = highlight
-    ? "!border-accent shadow-[0_0_20px_rgba(99,102,241,0.3)] transition-all duration-500 ease-in"
-    : "transition-all duration-500 ease-in";
+    ? "!border-accent shadow-[0_0_24px_rgba(0,153,255,0.4)] scale-[1.02] transition-all duration-500 ease-in-out"
+    : "scale-100 transition-all duration-500 ease-in-out";
 
   return (
     <BentoCard

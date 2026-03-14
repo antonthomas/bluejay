@@ -21,16 +21,23 @@ export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
   const firstName = name.split(" ")[0];
   const greeting = getGreeting();
 
-  const handleGetInTouch = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const scrollTo = (
+    id: string,
+    onScroll?: () => void,
+  ): React.MouseEventHandler<HTMLAnchorElement> => (e) => {
     e.preventDefault();
-    const profileCard = document.getElementById("profile-card");
-    if (profileCard) {
-      profileCard.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => {
-        window.dispatchEvent(new CustomEvent("highlight-contact"));
-      }, 100);
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      onScroll?.();
     }
   };
+
+  const handleGetInTouch = scrollTo("profile-card", () =>
+    setTimeout(() => window.dispatchEvent(new CustomEvent("highlight-contact")), 100),
+  );
+
+  const handleViewExperience = scrollTo("experience");
 
   return (
     <BentoCard colSpan={2} rowSpan={2} delay={delay}>
@@ -60,6 +67,7 @@ export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
           </a>
           <a
             href="#experience"
+            onClick={handleViewExperience}
             className="rounded-full border border-card-border px-6 py-2.5 text-sm font-medium text-text-muted transition-colors hover:border-text-dim"
           >
             View Experience
