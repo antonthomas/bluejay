@@ -1,3 +1,5 @@
+import { FaCheck } from "react-icons/fa";
+
 interface BulletListProps {
   items: string[];
 }
@@ -7,7 +9,7 @@ export function BulletList({ items }: BulletListProps) {
     <ul className="space-y-3">
       {items.map((item) => (
         <li key={item} className="flex items-center gap-3 text-sm">
-          <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+          <FaCheck className="shrink-0 text-[#4ade80]" size={10} />
           {item}
         </li>
       ))}
