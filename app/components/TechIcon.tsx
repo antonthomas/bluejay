@@ -5,11 +5,11 @@ import {
   SiVuedotjs,
   SiAngular,
   SiTypescript,
-  SiDotnet,
   SiNodedotjs,
   SiGooglecloud,
-  SiFigma,
+  SiClaude,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import type { IconType } from "react-icons";
 
 const iconMap: Record<string, IconType> = {
@@ -17,10 +17,10 @@ const iconMap: Record<string, IconType> = {
   "Vue.js": SiVuedotjs,
   Angular: SiAngular,
   TypeScript: SiTypescript,
-  ".NET": SiDotnet,
+  AWS: FaAws,
   "Node.js": SiNodedotjs,
-  GCP: SiGooglecloud,
-  Figma: SiFigma,
+  "Google Cloud": SiGooglecloud,
+  Claude: SiClaude,
 };
 
 interface TechIconProps {

@@ -15,14 +15,14 @@
     { "value": "100%", "label": "Curiosity-Driven" }
   ],
   "techStack": [
+    { "name": "TypeScript", "color": "#3178C6" },
     { "name": "NestJS", "color": "#E0234E" },
+    { "name": "Node.js", "color": "#339933" },
     { "name": "Vue.js", "color": "#4FC08D" },
     { "name": "Angular", "color": "#DD0031" },
-    { "name": "TypeScript", "color": "#3178C6" },
-    { "name": ".NET", "color": "#512BD4" },
-    { "name": "Node.js", "color": "#339933" },
-    { "name": "GCP", "color": "#4285F4" },
-    { "name": "Figma", "color": "#F24E1E" }
+    { "name": "AWS", "color": "#FF9900" },
+    { "name": "Google Cloud", "color": "#4285F4" },
+    { "name": "Claude", "color": "#D97757" }
   ],
   "experience": [
     {
