@@ -19,7 +19,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
           </span>
         </div>
         <h4 className="text-base font-semibold">{experience.company}</h4>
-        <p className="mb-2 text-sm text-accent">{experience.role}</p>
+        <p className="mb-2 text-sm text-[#d4d4d4]">{experience.role}</p>
         <p className="text-sm leading-relaxed text-text-muted">
           {experience.description}
         </p>

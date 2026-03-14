@@ -51,7 +51,7 @@ export default function Home() {
         <CertificationsCard certifications={profile.certifications} delay={1.0} />
 
         <FooterCard
-          name={profile.name}
+          copyrightName={profile.copyrightName}
           linkedin={profile.linkedin}
           email={profile.email}
           delay={1.1}

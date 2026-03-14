@@ -25,6 +25,7 @@ export interface Education {
 
 export interface Profile {
   name: string;
+  copyrightName: string;
   title: string;
   location: string;
   email: string;

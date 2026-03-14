@@ -1,5 +1,6 @@
 {
   "name": "Anton Thomas",
+  "copyrightName": "Bluejay",
   "title": "Full Stack Software Engineer",
   "location": "Ghent, Belgium",
   "email": "anton@bluejay.be",
@@ -11,7 +12,7 @@
   "stats": [
     { "value": "5+", "label": "Years Experience" },
     { "value": "7", "label": "Industries Covered" },
-    { "value": "∞", "label": "Opportunities" }
+    { "value": "24/7", "label": "Looking To Improve" }
   ],
   "techStack": [
     { "name": "NestJS", "color": "#E0234E" },
@@ -29,40 +30,40 @@
       "role": "Full Stack Developer",
       "period": "Jan 2026 - Present",
       "description": "Building the future of hiring with NestJS and Vue.js in a fast-paced environment.",
-      "gradientFrom": "#2563eb33",
-      "gradientTo": "#0891b233"
+      "gradientFrom": "#9b5de540",
+      "gradientTo": "#4c1d9518"
     },
     {
       "company": "Attentia",
       "role": "Full Stack Developer",
       "period": "May 2025 - Dec 2025",
       "description": "Developed enterprise-grade full-stack solutions for HR and payroll services.",
-      "gradientFrom": "#05966933",
-      "gradientTo": "#0d948833"
+      "gradientFrom": "#2dd4bf40",
+      "gradientTo": "#06595e18"
     },
     {
       "company": "AE",
       "role": "Technical Consultant",
       "period": "Sep 2022 - May 2025",
       "description": "Led technical coaching, instructed JS/TS & Angular courses, and built the Techscape escape room project.",
-      "gradientFrom": "#ea580c33",
-      "gradientTo": "#d9770633"
+      "gradientFrom": "#ffaa5c40",
+      "gradientTo": "#b4500a18"
     },
     {
       "company": "Farmad nv",
       "role": "Full Stack Developer",
       "period": "Sep 2022 - May 2025",
       "description": "Built the Angular frontend for FarmaContent, translating business requirements into a DDD-aligned architecture.",
-      "gradientFrom": "#e11d4833",
-      "gradientTo": "#ec489933"
+      "gradientFrom": "#6ec84040",
+      "gradientTo": "#2a6e1218"
     },
     {
       "company": "antonthomas.be",
       "role": "Full Stack Developer",
       "period": "Apr 2019 - May 2024",
       "description": "Designed and developed websites & webshops for clients like Dimitri Vegas & Like Mike and Lost Frequencies.",
-      "gradientFrom": "#7c3aed33",
-      "gradientTo": "#c026d333"
+      "gradientFrom": "#60a5fa40",
+      "gradientTo": "#1e3a8a18"
     }
   ],
   "services": [

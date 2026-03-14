@@ -1,3 +1,5 @@
+"use client";
+
 import { BentoCard } from "../BentoCard";
 
 interface HeroCardProps {
@@ -9,6 +11,17 @@ interface HeroCardProps {
 
 export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
   const firstName = name.split(" ")[0];
+
+  const handleGetInTouch = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const profileCard = document.getElementById("profile-card");
+    if (profileCard) {
+      profileCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      setTimeout(() => {
+        window.dispatchEvent(new CustomEvent("highlight-contact"));
+      }, 100);
+    }
+  };
 
   return (
     <BentoCard colSpan={2} rowSpan={2} delay={delay}>
@@ -30,7 +43,8 @@ export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
         </div>
         <div className="flex gap-3">
           <a
-            href="#contact"
+            href="#profile-card"
+            onClick={handleGetInTouch}
             className="rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
           >
             Get in Touch

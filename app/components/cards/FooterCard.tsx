@@ -1,16 +1,16 @@
 import { BentoCard } from "../BentoCard";
 
 interface FooterCardProps {
-  name: string;
+  copyrightName: string;
   linkedin: string;
   email: string;
   delay?: number;
 }
 
-export function FooterCard({ name, linkedin, email, delay }: FooterCardProps) {
+export function FooterCard({ copyrightName: name, linkedin, email, delay }: FooterCardProps) {
   return (
-    <BentoCard colSpan={3} className="justify-between py-5" delay={delay}>
-      <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <BentoCard colSpan={3} className="justify-between flex-row" delay={delay}>
+      <div className="flex w-full gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm text-text-muted">
           &copy; {new Date().getFullYear()} {name}. All rights reserved.
         </p>
