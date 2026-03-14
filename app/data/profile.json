@@ -1,0 +1,103 @@
+{
+  "name": "Anton Thomas",
+  "initials": "AT",
+  "title": "Full Stack Developer & Technical Consultant",
+  "location": "Ghent, Belgium",
+  "email": "anton.thomas1310@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/anton-thomas/",
+  "languages": ["Dutch", "English", "French"],
+  "summary": "Specializing in robust, maintainable applications rooted in Domain-Driven Design. From MVP to production — I own the full lifecycle.",
+  "currentStatus": "Building full-stack products at Studaro & freelancing via Bluejay",
+  "availableForWork": true,
+  "stats": [
+    { "value": "5+", "label": "Years Experience" },
+    { "value": "MSc", "label": "Applied CS — KU Leuven" },
+    { "value": "3", "label": "Languages Spoken" }
+  ],
+  "techStack": [
+    { "name": "NestJS", "color": "#E0234E" },
+    { "name": "Vue.js", "color": "#4FC08D" },
+    { "name": "Angular", "color": "#DD0031" },
+    { "name": "TypeScript", "color": "#3178C6" },
+    { "name": ".NET", "color": "#512BD4" },
+    { "name": "Node.js", "color": "#339933" },
+    { "name": "GCP", "color": "#4285F4" },
+    { "name": "Figma", "color": "#F24E1E" }
+  ],
+  "experience": [
+    {
+      "company": "Studaro",
+      "role": "Full Stack Developer",
+      "period": "Jan 2026 - Present",
+      "description": "Building high-performance applications with NestJS and Vue.js in a fast-paced environment.",
+      "gradient": "from-blue-600/20 to-cyan-600/20"
+    },
+    {
+      "company": "Bluejay",
+      "role": "Freelance IT Consultant",
+      "period": "May 2025 - Present",
+      "description": "Helping businesses translate requirements into scalable architectures and cloud-deployed products.",
+      "gradient": "from-indigo-600/20 to-purple-600/20"
+    },
+    {
+      "company": "Attentia",
+      "role": "Full Stack Developer",
+      "period": "May 2025 - Dec 2025",
+      "description": "Developed enterprise-grade full-stack solutions for HR and payroll services.",
+      "gradient": "from-emerald-600/20 to-teal-600/20"
+    },
+    {
+      "company": "AE",
+      "role": "Technical Consultant",
+      "period": "Sep 2022 - May 2025",
+      "description": "Led technical coaching, instructed JS/TS & Angular courses, and built the Techscape escape room project.",
+      "gradient": "from-orange-600/20 to-amber-600/20"
+    },
+    {
+      "company": "Farmad nv",
+      "role": "Full Stack Developer",
+      "period": "Sep 2022 - May 2025",
+      "description": "Built the Angular frontend for FarmaContent, translating business requirements into a DDD-aligned architecture.",
+      "gradient": "from-rose-600/20 to-pink-600/20"
+    },
+    {
+      "company": "antonthomas.be",
+      "role": "Full Stack Developer",
+      "period": "Apr 2019 - May 2024",
+      "description": "Designed and developed websites & webshops for clients like Dimitri Vegas & Like Mike and Lost Frequencies.",
+      "gradient": "from-violet-600/20 to-fuchsia-600/20"
+    }
+  ],
+  "services": [
+    "Full-Stack Development",
+    "Technical Architecture",
+    "Technical Mentorship",
+    "Cloud Deployment (GCP)",
+    "DDD & Clean Architecture"
+  ],
+  "education": [
+    {
+      "institution": "KU Leuven",
+      "degree": "MSc Applied Computer Science",
+      "period": "2020 - 2022"
+    },
+    {
+      "institution": "Karel de Grote-Hogeschool",
+      "degree": "BSc Software Management",
+      "period": "2017 - 2020"
+    }
+  ],
+  "clients": [
+    "Dimitri Vegas & Like Mike",
+    "Lost Frequencies",
+    "Anouk Matton Cosmetics",
+    "Ter Eiken Squash & Padel"
+  ],
+  "certifications": [
+    "Intro to Deep Learning",
+    "React Native: The beginner guide (2024 edition)",
+    "The Complete Guide to Becoming a Software Architect",
+    "Presentation Skills: Master Confident Presentations",
+    "Intermediate Active Investor"
+  ]
+}
