@@ -43,8 +43,8 @@ export function HeroCard({ name, title, summary, delay }: HeroCardProps) {
             {greeting}, I&apos;m {firstName}
             <br />
             <span className="text-text-muted">I build products from</span>
-            <br />
-            <span className="text-text-muted">blank canvas to scale.</span>
+            <br className="hidden md:block" />
+            <span className="text-text-muted"> blank canvas to scale.</span>
           </h1>
           <p className="mt-4 max-w-md text-base leading-relaxed text-text-muted">
             {summary}
