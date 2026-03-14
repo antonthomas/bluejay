@@ -24,7 +24,7 @@ function getYearsOfExperience(): number {
 export default function Home() {
   const years = getYearsOfExperience();
   const stats = profile.stats.map((stat) =>
-    stat.label === "Years Experience" ? { ...stat, value: `${years}+` } : stat,
+    stat.dynamic === "yearsExperience" ? { ...stat, value: `${years}+` } : stat,
   );
 
   return (

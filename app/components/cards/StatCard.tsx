@@ -16,19 +16,18 @@ function parseStatValue(value: string): { num: number; suffix: string } {
 }
 
 function useCountUp(target: number, trigger: boolean, duration = 1200): number {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(target);
 
   useEffect(() => {
-    if (!trigger) return;
-    if (target === 0) { setCurrent(0); return; }
+    if (!trigger || target === 0) return;
 
+    setCurrent(0);
     const start = performance.now();
     let raf: number;
 
     const step = (now: number) => {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
-      // ease-out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       setCurrent(Math.round(eased * target));
       if (progress < 1) raf = requestAnimationFrame(step);
@@ -46,14 +45,20 @@ export function StatCard({ stat, delay }: StatCardProps) {
   const [inView, setInView] = useState(false);
   const { num, suffix } = parseStatValue(stat.value);
 
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
   const handleIntersect = useCallback((entries: IntersectionObserverEntry[]) => {
-    if (entries[0].isIntersecting) setInView(true);
+    if (entries[0].isIntersecting) {
+      setInView(true);
+      observerRef.current?.disconnect();
+    }
   }, []);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(handleIntersect, { threshold: 0.5 });
+    observerRef.current = observer;
     observer.observe(el);
     return () => observer.disconnect();
   }, [handleIntersect]);
@@ -64,7 +69,7 @@ export function StatCard({ stat, delay }: StatCardProps) {
     <BentoCard className="items-center justify-center text-center" delay={delay}>
       <div ref={ref}>
         <p className="text-3xl font-bold">
-          {inView ? displayed : 0}
+          {displayed}
           {suffix}
         </p>
         <p className="mt-1 text-sm text-text-muted">{stat.label}</p>

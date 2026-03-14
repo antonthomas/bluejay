@@ -11,7 +11,7 @@
   "availableForWork": false,
   "careerStart": "2019-04",
   "stats": [
-    { "value": "5+", "label": "Years Experience" },
+    { "value": "5+", "label": "Years Experience", "dynamic": "yearsExperience" },
     { "value": "7", "label": "Industries Covered" },
     { "value": "100%", "label": "Curiosity-Driven" }
   ],

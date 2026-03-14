@@ -1,6 +1,7 @@
 export interface Stat {
   value: string;
   label: string;
+  dynamic?: string;
 }
 
 export interface TechItem {

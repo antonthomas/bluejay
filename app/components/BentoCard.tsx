@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useCallback } from "react";
 
 interface BentoCardProps {
   children: React.ReactNode;
@@ -31,17 +31,23 @@ export function BentoCard({
   id,
   delay = 0,
 }: BentoCardProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [glow, setGlow] = useState({ x: 0, y: 0, visible: false });
+  const cardRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = ref.current?.getBoundingClientRect();
-    if (!rect) return;
-    setGlow({ x: e.clientX - rect.left, y: e.clientY - rect.top, visible: true });
+    const card = cardRef.current;
+    const glow = glowRef.current;
+    if (!card || !glow) return;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    glow.style.background = `radial-gradient(400px circle at ${x}px ${y}px, rgba(0, 153, 255, 0.06), transparent 60%)`;
+    glow.style.opacity = "1";
   }, []);
 
   const handleMouseLeave = useCallback(() => {
-    setGlow((prev) => ({ ...prev, visible: false }));
+    const glow = glowRef.current;
+    if (glow) glow.style.opacity = "0";
   }, []);
 
   const classes = [
@@ -55,7 +61,7 @@ export function BentoCard({
 
   return (
     <div
-      ref={ref}
+      ref={cardRef}
       id={id}
       className={classes}
       style={{
@@ -65,17 +71,12 @@ export function BentoCard({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {glow.visible && (
-        <div
-          className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
-          style={{
-            background: `radial-gradient(400px circle at ${glow.x}px ${glow.y}px, rgba(0, 153, 255, 0.06), transparent 60%)`,
-          }}
-        />
-      )}
-      <div className="relative z-10 flex h-full flex-col justify-between">
-        {children}
-      </div>
+      <div
+        ref={glowRef}
+        className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
+        style={{ opacity: 0 }}
+      />
+      {children}
     </div>
   );
 }
