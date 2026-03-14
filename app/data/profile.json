@@ -1,14 +1,13 @@
 {
   "name": "Anton Thomas",
-  "initials": "AT",
-  "title": "Full Stack Developer & Technical Consultant",
+  "title": "Full Stack Software Engineer",
   "location": "Ghent, Belgium",
-  "email": "anton.thomas1310@gmail.com",
+  "email": "anton@bluejay.be",
   "linkedin": "https://www.linkedin.com/in/anton-thomas/",
   "languages": ["Dutch", "English", "French"],
   "summary": "Specializing in robust, maintainable applications rooted in Domain-Driven Design. From MVP to production — I own the full lifecycle.",
   "currentStatus": "Building full-stack products at Studaro & freelancing via Bluejay",
-  "availableForWork": true,
+  "availableForWork": false,
   "stats": [
     { "value": "5+", "label": "Years Experience" },
     { "value": "MSc", "label": "Applied CS — KU Leuven" },
@@ -30,42 +29,48 @@
       "role": "Full Stack Developer",
       "period": "Jan 2026 - Present",
       "description": "Building high-performance applications with NestJS and Vue.js in a fast-paced environment.",
-      "gradient": "from-blue-600/20 to-cyan-600/20"
+      "gradientFrom": "#2563eb33",
+      "gradientTo": "#0891b233"
     },
     {
       "company": "Bluejay",
       "role": "Freelance IT Consultant",
       "period": "May 2025 - Present",
       "description": "Helping businesses translate requirements into scalable architectures and cloud-deployed products.",
-      "gradient": "from-indigo-600/20 to-purple-600/20"
+      "gradientFrom": "#4f46e533",
+      "gradientTo": "#9333ea33"
     },
     {
       "company": "Attentia",
       "role": "Full Stack Developer",
       "period": "May 2025 - Dec 2025",
       "description": "Developed enterprise-grade full-stack solutions for HR and payroll services.",
-      "gradient": "from-emerald-600/20 to-teal-600/20"
+      "gradientFrom": "#05966933",
+      "gradientTo": "#0d948833"
     },
     {
       "company": "AE",
       "role": "Technical Consultant",
       "period": "Sep 2022 - May 2025",
       "description": "Led technical coaching, instructed JS/TS & Angular courses, and built the Techscape escape room project.",
-      "gradient": "from-orange-600/20 to-amber-600/20"
+      "gradientFrom": "#ea580c33",
+      "gradientTo": "#d9770633"
     },
     {
       "company": "Farmad nv",
       "role": "Full Stack Developer",
       "period": "Sep 2022 - May 2025",
       "description": "Built the Angular frontend for FarmaContent, translating business requirements into a DDD-aligned architecture.",
-      "gradient": "from-rose-600/20 to-pink-600/20"
+      "gradientFrom": "#e11d4833",
+      "gradientTo": "#ec489933"
     },
     {
       "company": "antonthomas.be",
       "role": "Full Stack Developer",
       "period": "Apr 2019 - May 2024",
       "description": "Designed and developed websites & webshops for clients like Dimitri Vegas & Like Mike and Lost Frequencies.",
-      "gradient": "from-violet-600/20 to-fuchsia-600/20"
+      "gradientFrom": "#7c3aed33",
+      "gradientTo": "#c026d333"
     }
   ],
   "services": [

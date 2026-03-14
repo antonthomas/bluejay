@@ -13,7 +13,8 @@ export interface Experience {
   role: string;
   period: string;
   description: string;
-  gradient: string;
+  gradientFrom: string;
+  gradientTo: string;
 }
 
 export interface Education {
@@ -24,7 +25,6 @@ export interface Education {
 
 export interface Profile {
   name: string;
-  initials: string;
   title: string;
   location: string;
   email: string;
