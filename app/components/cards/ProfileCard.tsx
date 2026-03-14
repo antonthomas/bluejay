@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { BentoCard } from "../BentoCard";
@@ -23,6 +23,7 @@ export function ProfileCard({
   delay,
 }: ProfileCardProps) {
   const [highlight, setHighlight] = useState(false);
+  const photoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = () => {
@@ -31,6 +32,20 @@ export function ProfileCard({
     };
     window.addEventListener("highlight-contact", handler);
     return () => window.removeEventListener("highlight-contact", handler);
+  }, []);
+
+  const handlePhotoMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const el = photoRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    el.style.transform = `perspective(400px) rotateY(${x * 25}deg) rotateX(${-y * 25}deg) scale(1.05)`;
+  }, []);
+
+  const handlePhotoLeave = useCallback(() => {
+    const el = photoRef.current;
+    if (el) el.style.transform = "perspective(400px) rotateY(0) rotateX(0) scale(1)";
   }, []);
 
   const buttonBase =
@@ -51,14 +66,21 @@ export function ProfileCard({
       delay={delay}
       id="profile-card"
     >
-      <Image
-        src="/picture.jpeg"
-        alt={name}
-        width={112}
-        height={112}
-        className="h-28 w-28 rounded-full object-cover"
-        priority
-      />
+      <div
+        ref={photoRef}
+        className="transition-transform duration-200 ease-out"
+        onMouseMove={handlePhotoMove}
+        onMouseLeave={handlePhotoLeave}
+      >
+        <Image
+          src="/picture.jpeg"
+          alt={name}
+          width={112}
+          height={112}
+          className="h-28 w-28 rounded-full object-cover"
+          priority
+        />
+      </div>
       <div>
         <h2 className="text-lg font-semibold">{name}</h2>
         <p className="text-sm text-text-muted">{location}</p>
