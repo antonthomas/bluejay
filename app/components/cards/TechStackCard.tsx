@@ -12,7 +12,7 @@ export function TechStackCard({ techStack, delay }: TechStackCardProps) {
   return (
     <BentoCard colSpan={2} delay={delay}>
       <SectionHeading className="mb-5">Tech Stack</SectionHeading>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-5 gap-3">
         {techStack.map((tech) => (
           <div
             key={tech.name}

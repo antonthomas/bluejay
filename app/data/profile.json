@@ -1,36 +1,38 @@
 {
   "name": "Anton Thomas",
   "copyrightName": "Bluejay",
-  "title": "Full Stack Software Engineer",
+  "title": "Product Manager & Software Engineer",
   "location": "Ghent, Belgium",
   "email": "anton@bluejay.be",
   "linkedin": "https://www.linkedin.com/in/anton-thomas/",
   "languages": ["Dutch", "English", "French"],
-  "summary": "Versatile engineer who moves seamlessly between frontend, backend, and infrastructure. From first commit to production, I take full ownership.",
-  "currentStatus": "Building full-stack products at Studaro & freelancing via Bluejay",
+  "summary": "I work on every step, from learning what customers need to running the code in production.",
+  "currentStatus": "Owning product and engineering at Studaro.",
   "availableForWork": false,
   "careerStart": "2019-04",
   "stats": [
-    { "value": "5+", "label": "Years Experience", "dynamic": "yearsExperience" },
-    { "value": "7", "label": "Industries Covered" },
-    { "value": "100%", "label": "Curiosity-Driven" }
+    { "value": "7+", "label": "Years building software", "dynamic": "yearsExperience" },
+    { "value": "3", "label": "Products taken to production" },
+    { "value": "20+", "label": "Developers trained" }
   ],
   "techStack": [
     { "name": "TypeScript", "color": "#3178C6" },
     { "name": "NestJS", "color": "#E0234E" },
-    { "name": "Node.js", "color": "#339933" },
-    { "name": "Vue.js", "color": "#4FC08D" },
+    { "name": "Vue", "color": "#4FC08D" },
     { "name": "Angular", "color": "#DD0031" },
+    { "name": "PostgreSQL", "color": "#4169E1" },
     { "name": "AWS", "color": "#FF9900" },
     { "name": "Google Cloud", "color": "#4285F4" },
-    { "name": "Claude", "color": "#D97757" }
+    { "name": "Terraform", "color": "#844FBA" },
+    { "name": "Claude", "color": "#D97757" },
+    { "name": "Linear", "color": "#5E6AD2" }
   ],
   "experience": [
     {
       "company": "Studaro",
-      "role": "Full Stack Developer",
+      "role": "Product & Engineering",
       "period": "Jan 2026 - Present",
-      "description": "Building the future of hiring with NestJS and Vue.js in a fast-paced environment.",
+      "description": "Owning product and engineering for Studaro's HR platform: talking to users, shaping the roadmap, and building it with NestJS and Vue.",
       "gradientFrom": "#9b5de540",
       "gradientTo": "#4c1d9518"
     },
@@ -38,7 +40,7 @@
       "company": "Attentia",
       "role": "Full Stack Developer",
       "period": "May 2025 - Dec 2025",
-      "description": "Developed enterprise-grade full-stack solutions for HR and payroll services.",
+      "description": "Built full-stack HR and payroll software across a series of short-lived, six-week projects, working closely with designers and product owners.",
       "gradientFrom": "#2dd4bf40",
       "gradientTo": "#06595e18"
     },
@@ -68,11 +70,11 @@
     }
   ],
   "services": [
-    "Full-Stack Development",
-    "Technical Architecture",
-    "Technical Mentorship",
-    "Cloud Deployment (GCP)",
-    "DDD & Clean Architecture"
+    "Product management & roadmapping",
+    "Full-stack development",
+    "Technical architecture",
+    "Mentorship & coaching",
+    "Cloud infrastructure"
   ],
   "education": [
     {

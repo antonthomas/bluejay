@@ -5,22 +5,26 @@ import {
   SiVuedotjs,
   SiAngular,
   SiTypescript,
-  SiNodedotjs,
+  SiPostgresql,
   SiGooglecloud,
+  SiTerraform,
   SiClaude,
+  SiLinear,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import type { IconType } from "react-icons";
 
 const iconMap: Record<string, IconType> = {
   NestJS: SiNestjs,
-  "Vue.js": SiVuedotjs,
+  Vue: SiVuedotjs,
   Angular: SiAngular,
   TypeScript: SiTypescript,
+  PostgreSQL: SiPostgresql,
   AWS: FaAws,
-  "Node.js": SiNodedotjs,
   "Google Cloud": SiGooglecloud,
+  Terraform: SiTerraform,
   Claude: SiClaude,
+  Linear: SiLinear,
 };
 
 interface TechIconProps {

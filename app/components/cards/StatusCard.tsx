@@ -14,7 +14,7 @@ export function StatusCard({
 }: StatusCardProps) {
   return (
     <BentoCard delay={delay}>
-      <SectionHeading className="mb-3">Currently</SectionHeading>
+      <SectionHeading className="mb-3">What I&apos;m working on</SectionHeading>
       <p className="text-lg font-medium leading-snug">{currentStatus}</p>
       {availableForWork && (
         <div className="mt-4 flex items-center gap-2">
